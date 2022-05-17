@@ -172,6 +172,14 @@ abline(simple.fit, col= "black")
 cor(TOTAL_ASSET,LONGLOSS)
 
 
+# 3D Scatterplot
+library(scatterplot3d)
+attach(datasa)
+ 
+scatterplot3d(TOTAL_ASSET, LONGLOSS,LIQUIDRATIO,
+              main = "3D Scatterplot")
+
+
 library(ggplot2)
 colnames(datasa)
 
